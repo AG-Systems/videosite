@@ -1,5 +1,5 @@
 <br>
-<% if user_signed_in? %>
+<% if user_signed_in? && current_user.subscribed? %>
 <html ng-app="demo">
   <head>
     <meta charset="utf-8">
