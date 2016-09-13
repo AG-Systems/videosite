@@ -1,0 +1,42 @@
+<!--
+<div id="cssmenu">
+<ul>
+   <li class="active"><a href="#"><span>Intro</span></a></li>
+   <br/>
+   <div id = "playlist-section"><p>Changing your mindset</p></div>
+   <li><a href="#">Being more positive</a></li> 
+   <li><a href="#">Strengths and Weakness</a></li> 
+   <li><a href="#">Accepting</a></li> 
+   <li><a href="#">Focus</a></li> 
+   <div id = "playlist-section"><p>Body language</p></div>   
+   <li><a href="#">Posture</a></li>
+   <li><a href="#">Smiling</a></li> 
+   <li><a href="#">Eye Contact</a></li>
+   <li><a href="#">Speech</a></li>   
+   <div id = "playlist-section"><p>Motivation</p></div>   
+</ul>
+</div>
+
+-->
+<div id="playlist">
+<html ng-app="demo">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  </head>
+  <body ng-controller="appCtrl">
+    <section>
+      <div class="container">
+        <ul class="flowGrid" ng-flow-grid="demoGird" min-item-width="200">
+          <li class="flowGridItem" ng-repeat="video in confidence | filter:searchText">
+                  <a href="{{ video.link }}"><img ng-src="{{video.img}}"></a>
+                  <div id="item-bar-bot">
+                  <p>{{ video.name }}</p>
+              </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>
+</div>

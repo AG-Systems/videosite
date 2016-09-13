@@ -1,0 +1,79 @@
+<br>
+<% if user_signed_in? %>
+<html ng-app="demo">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <style type="text/css">
+    /*------------------------*/
+    #item-bar-bot
+    {
+      background-color: white;
+      width: 218px;
+      height: 50px;
+    }
+    p
+    {
+        font-size: 20px;
+    }
+    .flowGrid{position: relative;padding: 0;}
+    .flowGrid:before,.flowGrid:after{
+        content: "";
+        display: table;
+    }
+    .flowGrid:after{
+        clear:both;
+    }
+    .flowGridItem{ list-style: none;}
+    .flowGridItem img{width:100%;}
+    .flowGridColumn{
+        float: left;
+        padding-left: 10px;
+    }
+    .flowGridColumn:last-of-type{
+        /*padding-right: 10px;*/
+    }
+    /*---------- demo page only--------------*/
+    header{
+      background-color: #efefef;
+      margin-bottom: 25px;
+      height: 250px;
+      text-align: center;
+    }
+    </style>
+  </head>
+  <body ng-controller="appCtrl">
+    <section>
+      <div class="container">
+        <ul class="flowGrid" ng-flow-grid="demoGird" min-item-width="200" max-item-width="300">
+          <li class="flowGridItem" ng-repeat="item in items | filter:searchText">
+                  <a href="{{ item.link }}"><img ng-src="{{item.img}}"></a>
+                  <div id="item-bar-bot">
+                  <p>{{ item.name }}</p>
+
+              </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>
+
+<% else %>
+<div class="jumbotron">
+    <h1>Welcome, new user!</h1>
+    <p class="lead">
+      You must sign in or sign up before you can access our super sweet,
+      top secret content.
+    </p>
+    <div class="row-fluid">
+      <div class="span6">
+        <%= link_to "Sign In", new_user_session_path, :class => "btn btn-success" %>
+      </div>
+      <br>
+      <div class="span6">
+        <%= link_to "Sign Up", new_user_registration_path, :class => "btn btn-success" %>
+      </div>
+    </div>
+</div>
+<% end %>
