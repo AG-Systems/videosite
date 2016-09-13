@@ -3,7 +3,8 @@ class SubscribersController < ApplicationController
     
     def new
     end
-    
+    def create
+    end
     def update
     
         token = params[:stripeToken]
