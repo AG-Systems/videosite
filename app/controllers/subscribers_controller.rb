@@ -4,19 +4,6 @@ class SubscribersController < ApplicationController
     def new
     end
     def create
-                token = params[:stripeToken]
-        
-        customer = Stripe::Customer.create(
-            card: token,
-            plan: 1020,
-            email: current_sign_in.email
-        
-            )
-            current_user.subscribed = true
-            current_user.stripeid = customer.id
-            current_user.save
-            
-            redirect_to root_path
     end
     def update
     
@@ -28,10 +15,10 @@ class SubscribersController < ApplicationController
             email: current_sign_in.email
         
             )
+            redirect_to root_path
             current_user.subscribed = true
             current_user.stripeid = customer.id
             current_user.save
             
-            redirect_to root_path
     end
 end
