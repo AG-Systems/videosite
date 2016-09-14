@@ -5,6 +5,8 @@ class SubscribersController < ApplicationController
     end
     def create
     end
+    def show
+    end
     def update
     
         token = params[:stripeToken]
