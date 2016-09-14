@@ -8,7 +8,6 @@ Rails.application.routes.draw do
   get 'contents/confidence-intro' => 'contents#confidence-intro'
   get 'contents/accepting' => 'contents#accepting'
   get 'contents/motivation-intro' => 'contents#motivation-intro'  
-  get "subscribers" => redirect("/subscribers#create")
   resources :accounts
   resources :subscribers
 end
