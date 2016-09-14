@@ -6,6 +6,9 @@ class SubscribersController < ApplicationController
     def create
     end
     def show
+            current_user.subscribed = true
+            current_user.stripeid = customer.id
+            current_user.save 
     end
     def update
     
