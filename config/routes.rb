@@ -10,5 +10,4 @@ Rails.application.routes.draw do
   get 'contents/motivation-intro' => 'contents#motivation-intro'  
   resources :accounts
   resources :subscribers
-  resources :subscriber
 end
