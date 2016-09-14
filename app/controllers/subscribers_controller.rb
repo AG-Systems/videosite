@@ -2,7 +2,9 @@ class SubscribersController < ApplicationController
     before_filter :authenticate_user!
     
     def new
-        token = params[:stripeToken]
+    end
+    def create
+                token = params[:stripeToken]
         
         customer = Stripe::Customer.create(
             card: token,
@@ -15,8 +17,6 @@ class SubscribersController < ApplicationController
             current_user.save
             
             redirect_to root_path
-    end
-    def create
     end
     def update
     
