@@ -259,3 +259,29 @@
   max-width: 800px;
   margin: 0 auto;
 }
+#support-page {
+ 	height: 100%;
+ 	top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #F1F2B5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #F1F2B5 , #135058); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #F1F2B5 , #135058); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+}
+.support h1
+{
+  text-align: center;
+  color: #d9d9d9;
+}
+.support h2
+{
+  text-align: center;
+  color: #d9d9d9;
+}
+.support p
+{
+ text-align: center; 
+ color: #d9d9d9;
+}

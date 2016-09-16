@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   root 'pages#index'
   get 'home'  => 'pages#home'
   get 'support' => 'pages#support'
+  get 'about' => 'pages#about'
   get 'subscribers' => 'subscribers#new'
   get 'contents/confidence-intro' => 'contents#confidence-intro'
   get 'contents/accepting' => 'contents#accepting'
