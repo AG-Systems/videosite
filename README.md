@@ -1,15 +1,17 @@
-Welcome to your Rails project on Cloud9 IDE!
+To do:
 
-To get started, just do the following:
+make trailer video
 
-1. Run the project with the "Run Project" button in the menu bar on top of the IDE.
-2. Preview your new app by clicking on the URL that appears in the Run panel below (https://project-ag-systems.c9users.io/).
+Make actual content
 
-Happy coding!
-The Cloud9 IDE team
+Make support page
 
+Make about page
 
-## Support & Documentation
+Make it secure
 
-Visit http://docs.c9.io for support, or to learn more about using Cloud9 IDE. 
-To watch some training videos, visit http://www.youtube.com/user/c9ide
+Make it so you must pay to access all of the content
+
+Launch it
+
+Market it (give out free accounts)
