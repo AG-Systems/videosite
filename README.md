@@ -14,4 +14,5 @@ Make it so you must pay to access all of the content
 
 Launch it
 
-Market it (give out free accounts)
+Market it (give out free accounts, instagram, reddit, youtube)
+
