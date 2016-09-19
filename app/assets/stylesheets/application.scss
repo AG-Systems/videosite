@@ -186,7 +186,7 @@
   max-width: 300px;
   padding: 19px 29px 29px;
   margin: 0 auto 20px;
-  background-color: #fff;
+  /*background-color: #fff; */
   border: 1px solid #e5e5e5;
   -webkit-border-radius: 5px;
      -moz-border-radius: 5px;
@@ -284,4 +284,17 @@
 {
  text-align: center; 
  color: #d9d9d9;
+}
+#login
+{
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        margin: 0;  
+
+background: #00C9FF; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #00C9FF , #92FE9D); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #00C9FF , #92FE9D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
 }

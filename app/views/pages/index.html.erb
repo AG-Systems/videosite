@@ -1,6 +1,6 @@
-<br>
 <% if user_signed_in? %>
   <% if  current_user.subscribed? %>
+  <br>
   <html ng-app="demo">
     <head>
       <meta charset="utf-8">
@@ -67,11 +67,12 @@
 
 <% end %>
 <% else %>
+
+<body id="login">
 <div class="jumbotron">
     <h1>Welcome, new user!</h1>
     <p class="lead">
-      You must sign in or sign up before you can access our super sweet,
-      top secret content.
+      You must sign in or sign up before you can access a better mindset
     </p>
     <div class="row-fluid">
       <div class="span6">
@@ -83,4 +84,5 @@
       </div>
     </div>
 </div>
+</body>
 <% end %>
