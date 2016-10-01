@@ -18,3 +18,13 @@
 //= require ngFlowGrid
 //= require bootstrap-sprockets
 //= require_tree .
+$(document).ready(function () 
+{
+    $(".video-container").hide();
+    
+    $( "#videobutton" ).click(function() 
+    {
+      $("#videobutton").hide();
+      $(".video-container").fadeIn();
+    });
+});

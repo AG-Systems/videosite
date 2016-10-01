@@ -67,8 +67,8 @@
 
 <% end %>
 <% else %>
-
 <body id="login">
+<% if false %>
 <div class="jumbotron">
     <h1>Welcome, new user!</h1>
     <p class="lead">
@@ -84,5 +84,33 @@
       </div>
     </div>
 </div>
+<% end %>
+<button type="button" class="btn btn-primary btn-lg btn-block" id="videobutton">Show video</button>
+<div class="video-container">
+<iframe width="1920" height="1080" src="https://www.youtube.com/embed/Hx3wOMDSRiE?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+</div>
+<div id="list">
+  <br>
+  <h2> IMPROVE </h2>
+  <div class="cd-price">
+						<span class="cd-currency">$</span>
+						<span class="cd-value">5</span>
+						<span class="cd-duration">/mo</span>
+	</div>
+<ul class="list-group">
+  <li class="list-group-item">Improve your confidence</li>
+  <li class="list-group-item">Redfine yourself</li>
+  <li class="list-group-item">Improve relationships</li>
+  <li class="list-group-item">Be more successful</li>
+  <li class="list-group-item">Be the best you</li>
+</ul>
+<br>
+<div class="frontpage">
+<a href="/users/sign_up">
+<button type="button" class="btn btn-primary btn-lg">Subscribe!</button>
+</a>
+</div>
+</div>
+
 </body>
 <% end %>
