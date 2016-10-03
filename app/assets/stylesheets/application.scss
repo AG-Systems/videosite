@@ -403,6 +403,11 @@ background: -webkit-linear-gradient(to left, #BA8B02 , #181818); /* Chrome 10-25
 background: linear-gradient(to left, #BA8B02 , #181818); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         
 }
+body
+{
+    overflow-x: hidden;
+    width: 100%;
+}
 .video-container {
 	position:relative;
 	padding-bottom:56.25%;
