@@ -424,3 +424,41 @@ background: linear-gradient(to left, #BA8B02 , #181818); /* W3C, IE 10+/ Edge, F
   width: 377px;
   margin: 0 auto;
 }
+.slide {
+	background-position: center center;
+	background-repeat: no-repeat;
+	padding-bottom: 65px;
+	padding-top: 50px;
+	text-align: center;
+}
+
+#slide-1 {
+	background-image: url('../frontpage.jpg');
+	color: #ffffff;
+	height: 900px;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+	background-attachment: relative;
+	background-position: center center;
+}
+
+#slide-1 h1 
+{
+	padding-top: 90px;
+  color: white;
+  font-size: 100px;
+}
+#slide-1 h4 
+{
+	/* padding-top: 130px; */
+  color: white;
+  font-size: 40px;
+}
