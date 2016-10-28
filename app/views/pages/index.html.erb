@@ -17,21 +17,36 @@
       {
           font-size: 20px;
       }
-      .flowGrid{position: relative;padding: 0;}
-      .flowGrid:before,.flowGrid:after{
+      .flowGrid
+      {
+        position: relative;padding: 0;
+        
+      }
+      .flowGrid:before,.flowGrid:after
+      {
           content: "";
           display: table;
       }
       .flowGrid:after{
           clear:both;
       }
-      .flowGridItem{ list-style: none;}
-      .flowGridItem img{width:100%;}
-      .flowGridColumn{
+      .flowGridItem
+      { 
+        list-style: none;
+        
+      }
+      .flowGridItem img
+      {
+        width:100%;
+        
+      }
+      .flowGridColumn
+      {
           float: left;
           padding-left: 10px;
       }
-      .flowGridColumn:last-of-type{
+      .flowGridColumn:last-of-type
+      {
           /*padding-right: 10px;*/
       }
       /*---------- demo page only--------------*/
@@ -51,7 +66,6 @@
                     <a href="{{ item.link }}"><img ng-src="{{item.img}}"></a>
                     <div id="item-bar-bot">
                     <p>{{ item.name }}</p>
-  
                 </div>
             </li>
           </ul>
@@ -64,70 +78,119 @@
   <script type="text/javascript">
     window.location.href="/subscribers/new"  // put your correct path in a string here
   </script>
-
 <% end %>
 <% else %>
 <body id="login">
 <% if false %>
-<div class="jumbotron">
-    <h1>Welcome, new user!</h1>
-    <p class="lead">
-      You must sign in or sign up before you can access a better mindset
-    </p>
-    <div class="row-fluid">
-      <div class="span6">
-        <%= link_to "Sign In", new_user_session_path, :class => "btn btn-success" %>
-      </div>
-      <br>
-      <div class="span6">
-        <%= link_to "Sign Up", new_user_registration_path, :class => "btn btn-success" %>
-      </div>
-    </div>
-</div>
-<% end %>
-   <div class="slide story" id="slide-1" data-slide="1">
-        <div class="container">
-            <div id="home-row-1" class="row clearfix">
-                <div class="col-12">
-                    <h1 class="font-semibold">Improve your confidence<span class="font-thin"></span></h1>
-                    <h4 class="font-thin">Weekly <span class="font-semibold"> premium </span> videos </h4>
-                    <br>
-                  <!--   <h4 class="font-thin">Company that specialize <span class="font-semibold"></span> in high quality services and high quality sites</h4> -->
-                    <br>
-                    <br>
-                </div>
-                <!-- /col-12 -->
-            </div>
-            <button type="button" class="btn btn-primary btn-lg btn-block" id="videobutton">Show video</button>
-<div class="video-container">
-<iframe width="1920" height="1080" src="https://www.youtube.com/embed/Hx3wOMDSRiE?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-</div>
-            <!-- /row -->
-            <div id="home-row-2" class="row clearfix">
-                <div class="col-12 col-sm-4">
-                    <div class="home-hover navigation-slide" data-slide="4">
-                    </div><span> </span>
-                </div>
-                <div class="col-12 col-sm-4">
-                    <div class="home-hover navigation-slide" data-slide="3">
-                    </div><span> </span>
-                </div>
-                <div class="col-12 col-sm-4">
-                    <div class="home-hover navigation-slide" data-slide="5">
-                    </div><span> </span>
-                </div>
-            </div>
-            <!-- /row -->
-        </div>
-        <!-- /container -->
-    </div>
-    <!--
-<button type="button" class="btn btn-primary btn-lg btn-block" id="videobutton">Show video</button>
 
-<div class="video-container">
-<iframe width="1920" height="1080" src="https://www.youtube.com/embed/Hx3wOMDSRiE?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+<% end %>
+
+	<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,600,300,200&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+	<!-- === Arrows === -->
+	<div id="arrows">
+		<div id="arrow-up" class="disabled"></div>
+		<div id="arrow-down"></div>
+		<div id="arrow-left" class="disabled visible-lg"></div>
+		<div id="arrow-right" class="disabled visible-lg"></div>
+	</div><!-- /.arrows -->
+
+
+	<!-- === MAIN Background === -->
+	<div class="slide story" id="slide-1" data-slide="1">
+		<div class="container">
+			<div id="home-row-1" class="row clearfix">
+				<div class="col-12">
+					<h1 class="font-semibold">CONFIDENT <span class="font-thin">MINDSET</span></h1>
+					<h4 class="font-thin">Weekly <span class="font-semibold">premium videos to change your </span> life.</h4>
+					<br>
+					<br>
+				</div><!-- /col-12 -->
+			</div><!-- /row -->
+			<div id="home-row-2" class="row clearfix">
+				<div class="col-12 col-sm-4"><div class="home-hover navigation-slide" data-slide="4"><img src=""></div><span>PROFESSIONAL</span></div>
+				<div class="col-12 col-sm-4"><div class="home-hover navigation-slide" data-slide="3"><img src=""></div><span>PROVEN</span></div>
+				<div class="col-12 col-sm-4"><div class="home-hover navigation-slide" data-slide="5"><img src=""></div><span>AFFORDABLE</span></div>
+			</div><!-- /row -->
+		</div><!-- /container -->
+	</div><!-- /slide1 -->
+
+		<!-- === Slide 3 === -->
+	<div class="slide story" id="slide-3" data-slide="2">
+		<div class="container">
+			<div class="row title-row">
+				<div class="col-12 font-thin">How <span class="font-semibold">it</span> works </div>
+			</div><!-- /row -->
+			<div class="row subtitle-row">
+<div class="list-group">
+  <a class="list-group-item active">
+    <h2 class="list-group-item-heading">Watch the premium video</h2>
+    <p class="list-group-item-text">You will receive a video per week</p>
+  </a>
 </div>
--->
+<br>
+<div class="list-group">
+  <a class="list-group-item active">
+    <h2 class="list-group-item-heading">Follow the instructions</h2>
+    <p class="list-group-item-text">Think of it as daily tasks </p>
+  </a>
+</div>
+			</div><!-- /row -->
+      
+		</div><!-- /container -->
+	</div><!-- /slide3 -->
+
+	<!-- === Slide 2 === -->
+	<div class="slide story" id="slide-2" data-slide="2">
+		<div class="container">
+			<div class="row title-row">
+				<div class="col-12 font-thin">What <span class="font-semibold">you</span> get when you subscribe</div>
+			</div><!-- /row -->
+			<div class="row line-row">
+				<div class="hr">&nbsp;</div>
+			</div><!-- /row -->
+			<div class="row subtitle-row">
+				<div class="col-12 font-thin"> <span class="font-semibold">Benefits</span></div>
+			</div><!-- /row -->
+			<div class="row content-row">
+				<div class="col-12 col-lg-3 col-sm-6">
+					<p><i class="icon icon-eye-open"></i></p>
+					<h2 class="font-thin"> <span class="font-semibold">Relationships</span></h2>
+					<h4 class="font-thin">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h4>
+				</div><!-- /col12 -->
+				<div class="col-12 col-lg-3 col-sm-6">
+					<p><i class="icon icon-laptop"></i></p>
+					<h2 class="font-thin">Self <span class="font-semibold">Happiness</span></h2>
+					<h4 class="font-thin">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h4>
+				</div><!-- /col12 -->
+				<div class="col-12 col-lg-3 col-sm-6">
+					<p><i class="icon icon-tablet"></i></p>
+					<h2 class="font-thin"> Career <span class="font-semibold">Success</span></h2>
+					<h4 class="font-thin">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h4>
+				</div><!-- /col12 -->
+				<div class="col-12 col-lg-3 col-sm-6">
+					<p><i class="icon icon-pencil"></i></p>
+					<h2 class="font-semibold">Fearless</h2>
+					<h4 class="font-thin">You will learn how to deal with fear and conquer on what is scarying you.</h4>
+				</div><!-- /col12 -->
+			</div><!-- /row -->
+		</div><!-- /container -->
+	</div><!-- /slide2 -->
+<div id="aboutme">
+  <br>
+<div class="featurette" id="about">
+            <img class="featurette-image img-circle img-responsive pull-right" src="http://placehold.it/500x500">
+            <h2 class="featurette-heading">Who am I
+                <span class="text-muted"></span>
+            </h2>
+            <br>
+              <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. <br> Vestibulum id ligula porta felis euismod semper. <br>Praesent commodo cursus magna, vel scelerisque nisl consectetur. <br> Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <br>
+</div>
 <div id="list">
   <br>
   <h2> Start Today </h2>
