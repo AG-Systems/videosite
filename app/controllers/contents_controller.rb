@@ -8,4 +8,5 @@ class ContentsController < ApplicationController
   end
   def accepting
   end
+  #figure out maybe a better system
 end
