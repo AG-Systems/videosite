@@ -1,18 +1,18 @@
 To Do:
 
-make trailer video
+Make trailer video
 
-Make actual content
+Make actual content [video 1 done]
 
-Make support page
+Make support page [done kinda]
 
-Make about page
+Make about page 
 
-Make it secure
+Make it secure [can be done]
 
-Make it so you must pay to access all of the content
+Make it so you must pay to access all of the content [done]
 
-Launch it
+Launch it [done]
 
-Market it (give out free accounts, instagram, reddit, youtube)
+Market it (give out free accounts, instagram, reddit, youtube) [Done. Need to make the front page better]
 
