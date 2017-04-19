@@ -16,3 +16,7 @@ Launch it [done]
 
 Market it (give out free accounts, instagram, reddit, youtube) [Done. Need to make the front page better]
 
+
+`rake db:reset`
+
+`rake db:migrate`
